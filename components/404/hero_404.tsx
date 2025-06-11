@@ -1,5 +1,5 @@
 "use client";
-import { BikeOff, MapPinOff } from "lucide-react";
+import { Bike, MapPinOff } from "lucide-react";
 
 
 export default function Hero404() {
@@ -8,7 +8,7 @@ export default function Hero404() {
       <div className="flex flex-col items-center">
         <div className="h-[50vh] flex flex-col items-center justify-center flex-grow w-full gap-8 px-4 py-20 lg:px-10">
           <h1 className="flex items-center gap-6 text-center text-5xl font-bold sm:text-8xl">
-            <BikeOff size={54} />
+            <Bike size={54} />
             404
             <MapPinOff size={54} />
           </h1>
