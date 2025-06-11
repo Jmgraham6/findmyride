@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 96 15% 98%;
+    --foreground: 96 6% 8%;
+    --card: 96 15% 94%;
+    --card-foreground: 96 5% 13%;
+    --popover: 96 15% 98%;
+    --popover-foreground: 96 95% 7%;
+    --primary: 146 61% 37%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 96 13% 78%;
+    --secondary-foreground: 0 0% 18%;
+    --muted: 168 12% 88%;
+    --muted-foreground: 96 5% 37%;
+    --accent: 34 85% 85%;
+    --accent-foreground: 96 7% 17%;
+    --destructive: 0 63% 38%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 146 18% 65%;
+    --input: 146 11% 23%;
+    --ring: 146 61% 37%;
+    --radius: 0.75rem;
+    --chart-1: 146 61% 37%;
+    --chart-2: 36 86% 65%;
+    --chart-3: 208 21% 72%;
+    --chart-4: 220 20% 84%;
+    --chart-5: 96 10% 69%;
+}
+
+[data-theme='dark'] {
+    --background: 96 11% 10%;
+    --foreground: 96 8% 94%;
+    --card: 96 11% 12%;
+    --card-foreground: 96 8% 94%;
+    --popover: 96 11% 12%;
+    --popover-foreground: 96 8% 94%;
+    --primary: 146 61% 37%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 96 8% 25%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 168 16% 17%;
+    --muted-foreground: 96 8% 65%;
+    --accent: 34 35% 25%;
+    --accent-foreground: 96 12% 96%;
+    --destructive: 0 63% 42%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 146 11% 26%;
+    --input: 146 13% 23%;
+    --ring: 146 61% 37%;
+    --radius: 0.75rem;
+    --chart-1: 146 61% 40%;
+    --chart-2: 36 86% 54%;
+    --chart-3: 208 22% 44%;
+    --chart-4: 220 20% 31%;
+    --chart-5: 96 8% 39%;
+}
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply box-border bg-background text-foreground;
+    /* Apply body font to body elements */
+    @apply font-montserrat;
+  }
+
+  /* Apply headings font to all headings */
+  h1,
+  h2,
+  h3 {
+    @apply font-bebas-neue;
+  }
+}
+
+@layer utilities {
+  .min-h-screen {
+    min-height: 100vh;
+    /* Fallback */
+    min-height: 100dvh;
+  }
+
+  .h-screen {
+    height: 100vh;
+    /* Fallback */
+    height: 100dvh;
+  }
+}
